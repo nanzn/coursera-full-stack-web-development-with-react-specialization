@@ -30,7 +30,8 @@
                       <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
               </ul>
               <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal" class="btn">
+                <!-- <a data-toggle="modal" data-target="#loginModal" class="btn"> -->
+                <a id="loginButton" class="btn">
                   <span class="fa fa-sign-in"></span> Login
                 </a>
               </span>
@@ -177,10 +178,13 @@
                         data-placement="bottom" href="#reservation">Reserve Table</a> -->
 
                         <!-- Assignment 3 -->
-                        <a role="button" class="btn btn-block btn-warning"
-                           data-toggle="modal" data-target="#reservationModal">
+                        <!-- <a role="button" class="btn btn-block btn-warning"
+                           data-toggle="modal" data-target="#reservationModal"> -->
+
+                        <!-- Assignment 4 -->
+                        <a role="button" class="btn btn-block btn-warning" id="reservationButton">
                            Reserve Table
-                         </a>
+                        </a>
                     </div>
                   </div>
                 </div>
@@ -436,6 +440,18 @@
               }
             });
         });
+    </script>
+    <!-- Assignment 4 -->
+    <script>
+      $(document).ready(function() {
+        $("#loginButton").click(function(){
+          $("#loginModal").modal("toggle");
+        })
+
+        $("#reservationButton").click(function() {
+          $("#reservationModal").modal("toggle"); 
+        })
+      });
     </script>
 </body>
 
