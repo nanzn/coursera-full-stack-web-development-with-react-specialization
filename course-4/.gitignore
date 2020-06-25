@@ -2,3 +2,7 @@ node_modules
 package-lock.json
 mongodb
 sessions
+
+conFusionServer/bin/cert.csr
+conFusionServer/bin/certificate.pem
+conFusionServer/bin/private.key
